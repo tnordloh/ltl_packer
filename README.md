@@ -30,7 +30,10 @@ shipments two at a time, and create more discrete capacities.
 
 I created a 'brute force' solution, that generated a bunch of possible solutions, and then
 did queries against that data set from the console, to see what the possibilities were.
-It let me know that the maximum number of shipments I could fit is 9.
+That helped me to set goals for the final algorithm, but in real life, the brute force
+solution might be fine.  If the dataset is limited, and processor cycles are cheap, why
+not generate every possible load combination, and choose the best one, depending on the
+priorities of the day?
 
 ## Installation
 
