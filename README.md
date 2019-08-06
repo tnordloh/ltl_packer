@@ -1,43 +1,29 @@
-# LtlPacker
+# LtlPacker, code example
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/ltl_packer`. To experiment with that code, run `bin/console` for an interactive prompt.
+## Problem Description
 
-TODO: Delete this and the text above, and describe your gem
+Given 4 trucks each with available capacity, write an algorithm to distribute shipments as evenly as possible, trying to ship all goods and minimize wasted space.
+
+## Summary
+
+For this exercise, I tried a couple of different things.  I have to say, I enjoyed it quite
+a bit.  This is exactly the sort of thing I like to work on.
+
+I chose to initialize this project as a gem, and went on from there, so that it would look
+a little more professional, but honestly, the solution I settled on could probably fit in 
+less than 20 lines of code, just using some raw hashes.
+
+The final result prioritizes maximizing the total capacity ships, along with an
+even distribution of loads.  I de-prioritized maximizing the shipment total count.
+There is a line in the [link](/best_fit_decreasing_combinations.rb)
+
+I created a 'brute force' solution, that generated a bunch of possible solutions, and then
+did queries against that data set from the console, to see what the possibilities were.
+Th
+
 
 ## Installation
 
-Add this line to your application's Gemfile:
 
-```ruby
-gem 'ltl_packer'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install ltl_packer
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Development
-
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
-
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
-
-## Contributing
-
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/ltl_packer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
-
-## License
-
-The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
-## Code of Conduct
-
-Everyone interacting in the LtlPacker project’s codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/ltl_packer/blob/master/CODE_OF_CONDUCT.md).
+1. Trucks
+   * 
