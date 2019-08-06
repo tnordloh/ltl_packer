@@ -32,12 +32,16 @@ I created a 'brute force' solution, that generated a bunch of possible solutions
 did queries against that data set from the console, to see what the possibilities were.
 It let me know that the maximum number of shipments I could fit is 9.
 
+## Installation
+
+`git clone git@github.com:tnordloh/ltl_packer.git`
+
 ## Running
 
 Since this is a local gem, the best way to run it is to prepend `bundle exec`, and run it 
 from the root directory of the gem.
 
-I ran this using Ruby version 2.5.1
+I ran this using Ruby version 2.5.1.
 
 Main algorithm:
 
@@ -49,9 +53,3 @@ Brute force:
 
 If you want to look at the various shipments produced by the brute force version, just 
 insert `require 'byebug' ; byebug` at the end, and try it out :).  
-
-
-
-## Installation
-
-`git clone git@github.com:tnordloh/ltl_packer.git`
